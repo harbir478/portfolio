@@ -1,0 +1,49 @@
+.footer {
+    background: linear-gradient(270deg, rgba(0,0,0, 0.9), rgba($color-primary, 0.1), rgba($color-primary, 0.1), rgba(0,0,0,0.9)),
+    url(../../img/LAfooter.jpg);
+    opacity: 0.8;
+    width: 100%;
+    height: 40rem;
+    background-size: cover;
+    font-weight: 300;
+    &__contactBox {
+       
+      &--contactMe {
+        
+        font-size: 6rem;
+        background-color: black;
+        color: $color-primary;
+        border-radius: 0.5rem;
+        margin-top: -5rem;
+        display: inline-block;
+        margin-left: 50%;
+        padding: 0 1rem 0 1rem;
+        transform: translate(-50%,-00%);
+        margin-bottom: -5rem;
+        font-weight: 300;
+
+      }
+
+      &--phone {
+        font-size: 3rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      &--email {
+        font-size: 3rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      &--city {
+        font-size: 3rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+        margin-left: 13%; 
+        display:inline-block;
+      }
+    }
+
+
+}
