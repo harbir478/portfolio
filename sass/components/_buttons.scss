@@ -73,3 +73,76 @@
  text-shadow: 0.5px 1px 1px rgb(0, 0, 0);
 
 }
+
+[class^="icon-btn"] /*.icon-btn*/ {
+	height: 60px;
+	width: 60px;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 30px;
+	line-height: 60px;
+	transition: ease-in-out .3s;
+	border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid $color-primary;
+}
+
+.twitter {
+  color: rgb(255, 255, 255);
+  margin-right: 3rem;
+  
+}
+
+.facebook {
+  color: rgb(255, 255, 255);
+  margin-right: 3rem;
+}
+.google-plus {
+  color: rgb(255, 255, 255);
+  margin-right: 3rem;
+}
+
+.instagram {
+  color: rgb(255, 255, 255);
+  margin-right: 3rem;
+}
+
+.github {
+  color: rgb(255, 255, 255);
+  
+}
+
+.icon-btn:hover {
+	transform: scale(1.10);	
+	color: #FFFFFF;
+}
+
+.twitter:hover {
+  background-color: #4099FF;	
+  border: none;
+}
+
+.facebook:hover {
+  background-color: #3B5998;	
+  border: none;
+}
+
+.google-plus:hover {
+  background-color: #DB5A3C;
+  border: none;	
+}
+
+.instagram:hover {
+  background-color: #5C3D2E;	
+  border: none;
+}
+
+.github:hover {
+  background-color: #4183C4;
+  border: none;	
+}
+
+a.link {
+	color: inherit;	
+}

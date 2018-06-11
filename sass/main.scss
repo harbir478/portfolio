@@ -57,7 +57,7 @@ main{
     // }
     
     &__card {
-        border: 0.5px solid $color-primary;
+        border: 1px solid $color-primary;
         background-color: transparent;
         height: 28rem;
         width: 100%;
@@ -90,7 +90,7 @@ main{
 .projects {
     
     
-       padding: 8% 5% 8% 5%;
+       padding: 8% 5% 10% 5%;
        margin-top: -7rem;
        background-image: url(../img/bg.jpg);
        background-size: cover;
@@ -108,7 +108,6 @@ main{
             font-size: 5rem;
             margin-bottom: 1rem;
             color: $color-primary;
-            
             border-bottom: 2px solid $text-color;
             display: inline-block;
            }
@@ -140,6 +139,7 @@ main{
         border-radius: 3px;
         overflow: hidden;
         box-shadow: 0 0.5rem 0.8rem rgba(#473a12, 0.8);
+        
 
         &--front {
             background-color: rgba(39, 37, 13, 0.7);
@@ -168,19 +168,59 @@ main{
             background-color:rgba($black,.6);
             transform: rotateY(180deg);
             box-shadow: 0.5rem 0.5rem 0.8rem rgba($black, 1);
+            text-align: center;
         }
     }
   
 
     &:hover &__side--front {
+        transition-delay:0.5s;
         transform: rotateY(-180deg);
         box-shadow: 0 0.8rem 1.5rem rgba($color-primary, 0.8);
     }
 
     &:hover &__side--back {
+        transition-delay:0.5s;
         transform: rotateY(0);
         box-shadow:  0.5rem rgba($black, 1);
     }
+
+    
+    &__description{
+        color:$text-color;
+        padding: 3rem 2rem 0rem 2rem;
+        font-size: 2rem;
+    }
+
+    &__tags{
+        background-color: transparent;
+        padding: 0.3rem;
+        margin: 1rem;
+        color: $color-primary;
+        font-size: 2rem;
+        display: inline-block;
+        border: .2rem solid $color-primary;
+        border-radius: 30%;
+    }
+    &__links {
+        display: block;
+        margin-top: 2rem;
+        color: $color-primary;
+        font-size: 3.5rem;
+        color: white;
+
+        a {
+            text-decoration: none;
+            color: skyblue;
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+        }
+
+        a:hover {
+            border-bottom: 1px solid white;
+        }
+     }
 }
 
         

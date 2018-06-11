@@ -8,11 +8,21 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
-
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+        <script src="node_modules/aos/dist/aos.js"></script>
+        
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+              
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        
 
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    
 
     <title>Harbir Singh | Full Stack Web Developer</title>
 </head>
@@ -53,9 +63,8 @@
 
             <div class="mySkills">
 
-                <div class="mySkills__star"></div>
-
-                <div class="row">
+                <div class="row" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
                     <div class="col-1-of-5 mySkills__card">
                         <img src="./img/Deveoper icons/Javascript Icon.png" alt="" class="mySkills__skillsImg">
                         <h3>
@@ -124,7 +133,11 @@
         </div>
 
         <div class="row">
-            <div class="col-1-of-2">
+            
+            <div class="col-1-of-2" data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
                 <div class="card2">
                     <div class="card2__side card2__side--front">
                         <img src="./img/Deveoper icons/Campground.JPG" alt="" class="img1">
@@ -134,13 +147,30 @@
                             Campground Blog</h2>
                     </div>
                     <div class="card2__side card2__side--back card2__side--back-1">
-                        dfsfsdf
+                            <div class=card2__description>A blog for nature lovers to share and rate the expereince of camping spots around the world. </div>
+                        <h2>Technologies<h2> 
+
+                                <div class="card2__tags">NodeJS</div> 
+                                <div class="card2__tags">PassportJS</div> 
+                                <div class="card2__tags">ES6</div> 
+                                <div class="card2__tags">MongoDB</div> 
+                                <div class="card2__tags">Express</div> 
+                                
+                        <div class="card2__links"><i class="fas fa-eye"></i>
+                            <a href="https://rocky-woodland-81172.herokuapp.com/"> Live</a>
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/harbir478/campingSpots"> GitHub</a></div>
+                        
+
                     </div>
                 </div>
 
             </div>
 
-            <div class="col-1-of-2">
+            <div class="col-1-of-2" data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            >
                 <div class="card2">
                     <div class="card2__side card2__side--front">
                         <img src="./img/Deveoper icons/youtubeClone.JPG" alt="">
@@ -148,7 +178,16 @@
                             <i class="picon fab fa-youtube"></i> Youtube Clone</h2>
                     </div>
                     <div class="card2__side card2__side--back card2__side--back-1">
-                        dfsfsdf
+                            <div class=card2__description> A single page youtube clone with autoplay video on search and updated search results using youtube API. </div>
+                            <h2>Technologies<h2> 
+                                    <div class="card2__tags">ES6</div> 
+                                    <div class="card2__tags">React</div> 
+                                    <div class="card2__tags">Youtube API</div>
+                            
+                            <div class="card2__links"><i class="fas fa-eye"></i>
+                              <a href="http://youtube-clone.herokuapp.com/"> Live</a>
+                              <i class="fab fa-github"></i>
+                            <a href="https://github.com/harbir478/autoYoutube"> GitHub</a> </div>
                     </div>
                 </div>
 
@@ -156,21 +195,38 @@
         </div>
 
         <div class="row">
-            <div class="col-1-of-2">
-                <div class="card2">
+            <div class="col-1-of-2" data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            >
+                <div class="animate card2" data-animate="bounceIn" data-offset="50" data-duration="1.0s" data-delay="0.1s">
                     <div class="card2__side card2__side--front">
                         <img src="./img/Deveoper icons/Weather.JPG" alt="" class="img1">
                         <h2>
                             <i class="picon fas fa-sun"></i> Weather App</h2>
                     </div>
                     <div class="card2__side card2__side--back card2__side--back-1">
-                        dfsfsdf
+                            <div class=card2__description> A web aplication to fetch data from Weather API and display weather data and location of the city.</div>
+                        <h2>Technologies</h2>
+                        <div class="card2__tags">ES6</div> 
+                        <div class="card2__tags">Redux</div> 
+                        <div class="card2__tags">React</div> 
+                        <div class="card2__tags">Google Maps</div> 
+                        <div class="card2__tags">Weather API</div> 
+                    
+                        <div class="card2__links"><i class="fas fa-eye"></i>
+                            <a href="https://weather-city-data.herokuapp.com/"> Live</a>
+                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/harbir478/Weather-Data"> GitHub</a></div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="col-1-of-2">
+            <div class="col-1-of-2" data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+           >
                 <div class="card2">
                     <div class="card2__side card2__side--front">
                         <img src="./img/Deveoper icons/youtubeClone.JPG" alt="">
@@ -180,7 +236,19 @@
                             Survey App</h2>
                     </div>
                     <div class="card2__side card2__side--back card2__side--back-1">
-                        dfsfsdf
+                      <div class=card2__description> Web application designed to get feedback from the customers about the product and store feedback in the database.</div> 
+                        <h2>Technologies</h2>
+                     <div class="card2__tags">Google AOuth 2.0</div> 
+                    <div class="card2__tags">Redux</div> 
+                    <div class="card2__tags">React</div> 
+                    <div class="card2__tags">NodeJS</div> 
+                    <div class="card2__tags">MongoDB</div> 
+
+                    <div class="card2__links"><i class="fas fa-eye"></i>
+                        <a href="https://sleepy-earth-70878.herokuapp.com/"> Live</a>
+                        <i class="fab fa-github"></i>
+
+                        <a href="https://github.com/harbir478/FeedbackApp"> GitHub</a> </div>
                     </div>
                 </div>
 
@@ -189,8 +257,10 @@
 
     </section>
 
-    <footer class="footer">
-            <div class="row">
+    <footer class="footer" >
+            <div class="row" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1000">
                     <h2 class="footer__contactBox--contactMe">Contact Me</h2>
             </div>
 
@@ -205,8 +275,34 @@
             <div> <span class="footer__contactBox--city"><i class="fafooter fas fa-thumbtack"></i> Los Angeles,CA</span></div>
         </div>
     </div>
+
+    <div>
+    		<button class="icon-btn twitter"> 
+    		<a class="link" href="https://www.linkedin.com/in/harbir-singh/" target="_blank">
+    			<i class="fab fa-linkedin"></i>
+    		</a>
+    		<button class="icon-btn facebook"> 
+    		<a class="link" href="https://www.facebook.com/harbir.singh.18" target="_blank">
+    			<i class="fa fa-facebook"></i> 
+    		</a>
+    		<button class="icon-btn google-plus"> 
+    		<a class="link" href="https://plus.google.com/" target="_blank">
+    			<i class="fa fa-google-plus"></i> 
+    		</a>
+    		<button class="icon-btn instagram"> 
+    		<a class="link" href="https://www.instagram.com/harbir478/"  target="_blank">
+    			<i class="fa fa-instagram"></i>
+    		</a>
+    		<button class="icon-btn github"> 
+    		<a class="link" href="https://github.com/harbir478" target="_blank">
+    			<i class="fa fa-github"></i>
+    		</a>
+    	</div>
+
     </footer>
 
+
+    <script src="index.js"></script>
 </body>
 
 </html>
