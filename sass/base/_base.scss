@@ -6,10 +6,29 @@
     box-sizing: inherit;
 }
 html {
-    font-size: 45.5%;
+    font-size: 45%;
+
+
+    @include respond(tab-land){
+        font-size: 40%;
+    }
+    @include respond(tab-port){
+        font-size: 36%;
+    }
+    @include respond(phone){
+        font-size: 30%;
+    }
+   
+    @include respond(big-desktop){
+        font-size: 50%;
+    }
 }
 
 body {
     box-sizing: border-box;    
     background: #302f2f;
+    padding: 3rem;
+    @include respond(tab-land){
+        padding: 0;
+    }
 }

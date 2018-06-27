@@ -1,9 +1,14 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
-
+   
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+        
+        @include respond(phone){
+            margin-bottom: 0rem;
+            align-content: center;
+        }
     }
     
     @include clearfix;
@@ -13,7 +18,13 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(phone){
+                margin-right: 0;
+            }
+
         }
+
     }
 
     .col-1-of-5 {
@@ -23,15 +34,28 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal2;
         }
+        @include respond(phone){
+            width: 28% !important;
+           
+        }
     }
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);
+
+        @include respond(phone){
+            width: 75% !important;
+            margin: 0 10rem 5rem 10rem; 
+        }
         
     }
 
     .col-1-of-3 {
         width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+
+        @include respond(phone){
+         width:100%;
+        }
     }
 
     .col-2-of-3 {

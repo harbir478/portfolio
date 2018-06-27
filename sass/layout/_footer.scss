@@ -7,6 +7,12 @@
     background-size: cover;
     font-weight: 300;
     text-align: center;
+
+    @include respond(phone){
+      height: auto;
+       padding-bottom: 5rem; 
+  }
+
     &__contactBox {
        
       &--contactMe {
@@ -18,11 +24,13 @@
         border-radius: 0.5rem;
         margin-top: -5rem;
         display: inline-block;
-        
         padding: 0 1rem 0 1rem;
-       
         margin-bottom: -5rem;
         font-weight: 300;
+
+        @include respond(phone){
+          margin-bottom: 2rem; 
+      }
 
       }
 
@@ -30,12 +38,20 @@
         font-size: 3rem;
         color: white;
         background-color: rgba(0, 0, 0, 0.4);
+        @include respond(phone){
+          font-size: 4rem;
+      }
       }
 
       &--email {
         font-size: 3rem;
         color: white;
         background-color: rgba(0, 0, 0, 0.4);
+        @include respond(phone){
+          font-size: 4rem;
+          margin-top: 2rem;
+         
+      }
       }
 
       &--city {
@@ -44,6 +60,12 @@
         background-color: rgba(0, 0, 0, 0.4);
         margin-left: 13%; 
         display:inline-block;
+        @include respond(phone){
+          margin-left: 0; 
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          font-size: 4rem;
+      }
       }
     }
 

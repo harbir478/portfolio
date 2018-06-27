@@ -27,6 +27,13 @@ main{
     clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
     overflow: hidden;
 
+    @include respond(phone){
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+        margin-top: -3vh;
+        padding: 6% 5%;
+    }
+
     // -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 90%, 49% 100%, 0 90%, 0% 75%);
     // clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 90%, 49% 100%, 0 90%, 0% 75%); 
 }
@@ -34,7 +41,6 @@ main{
 .mySkills {
     margin-top: 10rem;
     z-index: 3;
-    // background-image: url(http://78.media.tumblr.com/9951ca2e7e884a48ca5b5269f5514cd6/tumblr_nwjrkxWOcd1tslewgo1_500.gif);
     background-size: cover;
     position: relative;
     border-radius: 0.8em;
@@ -232,7 +238,6 @@ main{
     border: 2px solid $color-primary;
     filter: drop-shadow(0px 2px 2px $color-primary);
     margin-right: 2rem;
-    
     right: -4rem;
     
   }
@@ -244,7 +249,6 @@ main{
     margin-top: -11.5rem;
     width: 100%;
     background: linear-gradient(270deg, rgba($color-primary, 0.5), rgba(126, 95, 41, 0.8), rgba(34,34,34,0), rgba(34,34,34,0));
-
     overflow: hidden;
 }
 

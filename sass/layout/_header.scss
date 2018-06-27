@@ -9,8 +9,17 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 90%, 49% 100%, 0 90%, 0% 75%); 
     opacity: 1;
     z-index: 1;
+    @include respond(phone){
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 100% 92%, 49% 100%, 0 95%, 0% 92%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 100% 95%, 49% 100%, 0 95%, 0% 92%); 
+        height: 55vh;
+    }
+
+
     &__icon {
         position: absolute;
+        width: 11rem;
+        display:block;
         left: 50%;
         top: 5%;
         transform: translate(-50%,-00%);
@@ -25,16 +34,5 @@
     text-align: center;
 }
 }
-// .bird {
-//     background-image: url(../../img/bird-cells.png);
-//     background-size: auto 100%;
-//     width: 88px;
-//     height: 125px;
-//     will-change: background-position;
-//     animation-timing-function: steps();
-//     animation-iteration-count: infinite;
-//     animation-duration: 1s;
-//     animation-delay: -0.5s;
-//     }
-   
+
 
