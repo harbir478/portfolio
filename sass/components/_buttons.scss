@@ -17,7 +17,15 @@
     &--btnDiv {
         animation: forButton 1s ease-out;
         border: 0.3rem solid $white;
-        margin-top: 35rem;
+        margin-top: 30rem;
+
+        @include respond(phone){
+          margin-top: 15rem;
+      }
+
+      @include respond(tab-port){
+        margin-top: 20rem;
+    }
       }
       
       &:hover {
@@ -88,13 +96,13 @@
   border: 2px solid $color-primary;
 
   @include respond(phone){
-    height: 9rem;
-    width: 9rem;
+    height: 7.5rem;
+    width: 7.5rem;
    }
+   
    &:link,
-      &:visited{
+  &:visited{
  text-decoration: none;
-
 }
 }
 

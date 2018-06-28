@@ -31,7 +31,7 @@ main{
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
         clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
         margin-top: -3vh;
-        padding: 6% 5%;
+        padding: 14% 3%
     }
 
     // -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 90%, 49% 100%, 0 90%, 0% 75%);
@@ -44,30 +44,12 @@ main{
     background-size: cover;
     position: relative;
     border-radius: 0.8em;
-    padding: 3% 3%;
-    height: auto;
-    // border: 2px solid #cecece;
-
-    // &__star {
-    //     position: absolute;
-    //     display: inline;
-    //     height: 10rem;
-    //     z-index: 5;
-    //     top: -5rem;
-    //     width: 10rem;
-    //     left: 42%;
-    //     background: radial-gradient( $sunset-gradient-2 4%, $sunset-gradient-3 100%);
-    //     -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    //     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    //     animation: starSpin 5s infinite;
-    // }
     
     &__card {
         border: 1px solid $color-primary;
         background-color: transparent;
         height: 28rem;
         width: 100%;
-        // filter: drop-shadow(0px 1px 1px $color-primary);
         border-top-left-radius: 30%;
         border-top-right-radius: 30%;
         border-bottom-left-radius: 5%;
@@ -77,6 +59,16 @@ main{
         color: $text-color;
         font-size: 2rem;
         font-weight: 200;
+   
+        @include respond(phone){
+            height: 25rem;
+        }
+        @include respond(tab-port){
+            height: 34rem;
+        }  
+        @include respond(tab-land){
+            height: 34rem;
+        }     
     }
 
     &__skillsImg{
@@ -90,6 +82,10 @@ main{
         }
     }
 
+    @include respond(phone){
+        left:3rem;
+    }
+
 }
 
 
@@ -100,11 +96,16 @@ main{
        margin-top: -7rem;
        background-image: url(../img/bg.jpg);
        background-size: cover;
-       
        height: auto;
        overflow: hidden;
        -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
        clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+
+       @include respond(phone){
+        padding: 15% 2% 16% 2%;
+        
+    }
+
 
        &__text {
            text-align: center;
@@ -154,13 +155,10 @@ main{
             padding: 5px;
             
             img{
-              
                 height: 30rem;
                 width: 100%;
                 -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
                 clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
-
-
             }
 
             h2 {

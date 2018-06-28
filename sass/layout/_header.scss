@@ -23,6 +23,10 @@
         left: 50%;
         top: 5%;
         transform: translate(-50%,-00%);
+
+        @include respond(phone){
+            width: 8rem;
+        }
 }
 
 &__text-box {

@@ -149,7 +149,13 @@ body {
   .btn--btnDiv {
     animation: forButton 1s ease-out;
     border: 0.3rem solid #fff;
-    margin-top: 35rem; }
+    margin-top: 30rem; }
+    @media (max-width: 37.5em) {
+      .btn--btnDiv {
+        margin-top: 15rem; } }
+    @media (max-width: 56.25em) {
+      .btn--btnDiv {
+        margin-top: 20rem; } }
   .btn:hover {
     color: #fff;
     border: 0.3rem solid rgba(255, 255, 255, 0);
@@ -200,8 +206,8 @@ body {
   border: 2px solid rgba(196, 175, 58, 0.9); }
   @media (max-width: 37.5em) {
     [class^="icon-btn"] {
-      height: 9rem;
-      width: 9rem; } }
+      height: 7.5rem;
+      width: 7.5rem; } }
   [class^="icon-btn"]:link, [class^="icon-btn"]:visited {
     text-decoration: none; }
 
@@ -273,6 +279,9 @@ a.link {
     left: 50%;
     top: 5%;
     transform: translate(-50%, 0%); }
+    @media (max-width: 37.5em) {
+      .header__icon {
+        width: 8rem; } }
   .header__text-box {
     position: absolute;
     color: white;
@@ -288,11 +297,11 @@ a.link {
   height: 40rem;
   background-size: cover;
   font-weight: 300;
-  text-align: center; }
-  @media (max-width: 37.5em) {
+  text-align: center;
+  height: auto; }
+  @media (max-width: 56.25em) {
     .footer {
-      height: auto;
-      padding-bottom: 5rem; } }
+      padding-bottom: 8rem; } }
   .footer__contactBox--contactMe {
     border-top: 1px solid white;
     font-size: 6rem;
@@ -304,21 +313,21 @@ a.link {
     padding: 0 1rem 0 1rem;
     margin-bottom: -5rem;
     font-weight: 300; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .footer__contactBox--contactMe {
         margin-bottom: 2rem; } }
   .footer__contactBox--phone {
     font-size: 3rem;
     color: white;
     background-color: rgba(0, 0, 0, 0.4); }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .footer__contactBox--phone {
         font-size: 4rem; } }
   .footer__contactBox--email {
     font-size: 3rem;
     color: white;
     background-color: rgba(0, 0, 0, 0.4); }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .footer__contactBox--email {
         font-size: 4rem;
         margin-top: 2rem; } }
@@ -328,7 +337,7 @@ a.link {
     background-color: rgba(0, 0, 0, 0.4);
     margin-left: 13%;
     display: inline-block; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .footer__contactBox--city {
         margin-left: 0;
         margin-top: 2rem;
@@ -342,8 +351,10 @@ a.link {
     margin-bottom: 8rem; }
     @media (max-width: 37.5em) {
       .row:not(:last-child) {
-        margin-bottom: 0rem;
-        align-content: center; } }
+        margin-bottom: 0rem; } }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 0rem; } }
   .row::after {
     content: "";
     display: table;
@@ -357,17 +368,26 @@ a.link {
           margin-right: 0; } }
   .row .col-1-of-5 {
     width: calc((100% - 4 * 3rem) / 5); }
+    @media (max-width: 37.5em) {
+      .row .col-1-of-5 {
+        margin-right: none; } }
     .row .col-1-of-5:not(:last-child) {
       margin-right: 3rem; }
     @media (max-width: 37.5em) {
       .row .col-1-of-5 {
-        width: 28% !important; } }
+        width: 27% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
     @media (max-width: 37.5em) {
       .row .col-1-of-2 {
-        width: 75% !important;
-        margin: 0 10rem 5rem 10rem; } }
+        width: 96% !important;
+        margin-left: 2%;
+        margin-right: 2%; } }
+    @media (max-width: 56.25em) {
+      .row .col-1-of-2 {
+        width: 64% !important;
+        margin-left: 18%;
+        margin-top: 6rem; } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
     @media (max-width: 37.5em) {
@@ -397,16 +417,14 @@ main {
       -webkit-clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
       clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
       margin-top: -3vh;
-      padding: 6% 5%; } }
+      padding: 14% 3%; } }
 
 .mySkills {
   margin-top: 10rem;
   z-index: 3;
   background-size: cover;
   position: relative;
-  border-radius: 0.8em;
-  padding: 3% 3%;
-  height: auto; }
+  border-radius: 0.8em; }
   .mySkills__card {
     border: 1px solid rgba(196, 175, 58, 0.9);
     background-color: transparent;
@@ -421,12 +439,24 @@ main {
     color: #e0e0e0;
     font-size: 2rem;
     font-weight: 200; }
+    @media (max-width: 37.5em) {
+      .mySkills__card {
+        height: 25rem; } }
+    @media (max-width: 56.25em) {
+      .mySkills__card {
+        height: 34rem; } }
+    @media (max-width: 75em) {
+      .mySkills__card {
+        height: 34rem; } }
   .mySkills__skillsImg {
     margin-top: 10%;
     width: 50%;
     transition: 0.35s; }
     .mySkills__skillsImg:hover {
       transform: scale(1.2); }
+  @media (max-width: 37.5em) {
+    .mySkills {
+      left: 3rem; } }
 
 .projects {
   padding: 8% 5% 10% 5%;
@@ -437,6 +467,9 @@ main {
   overflow: hidden;
   -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%); }
+  @media (max-width: 37.5em) {
+    .projects {
+      padding: 15% 2% 16% 2%; } }
   .projects__text {
     text-align: center;
     color: #e0e0e0;
