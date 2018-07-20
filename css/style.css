@@ -314,6 +314,9 @@ a.link {
   height: auto;
   position: absolute;
   padding-bottom: 2rem; }
+  @media (max-width: 37.5em) {
+    .footer {
+      background: url(../../img/LAfooterMobile.jpg); } }
 
 .contactMe {
   position: relative;
@@ -420,7 +423,7 @@ main {
   text-align: center; }
   @media (max-width: 56.25em) {
     main {
-      padding: 8% 3%; } }
+      padding: 12% 3%; } }
   @media (max-width: 37.5em) {
     main {
       margin-top: 0;

@@ -8,6 +8,10 @@
     height:auto;
     position: absolute;
     padding-bottom: 2rem;
+
+    @include respond(phone){
+      background: url(../../img/LAfooterMobile.jpg);
+    }
 }
 
 .contactMe {
