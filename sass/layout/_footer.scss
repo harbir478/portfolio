@@ -41,6 +41,8 @@
    &__info {
      background-color:rgba(0,0,0, 0.5);
      margin-bottom: 4rem;
+     color: white;
+     font-size: 3rem;
 
      @include respond(phone){
       margin-bottom: 1rem;

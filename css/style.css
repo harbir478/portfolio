@@ -235,6 +235,9 @@ body {
 .google-plus {
   color: white;
   margin-right: 3rem; }
+  @media (max-width: 37.5em) {
+    .google-plus {
+      display: none; } }
 
 .instagram {
   color: white;
@@ -339,7 +342,9 @@ a.link {
       align-items: center; } }
   .contact__info {
     background-color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    color: white;
+    font-size: 3rem; }
     @media (max-width: 37.5em) {
       .contact__info {
         margin-bottom: 1rem; } }
@@ -469,7 +474,7 @@ main {
     transition: 0.35s; }
     @media (max-width: 37.5em) {
       .mySkills__skillsImg {
-        width: 10rem; } }
+        width: 9rem; } }
     .mySkills__skillsImg:hover {
       transform: scale(1.2); }
 
