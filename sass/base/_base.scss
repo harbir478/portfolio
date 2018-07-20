@@ -5,6 +5,14 @@
     padding: 0px;
     box-sizing: inherit;
 }
+
+*::-moz-selection { color: $color-primary}
+*::selection { color: $color-primary}
+
+*:focus {
+    text-decoration: none;
+    outline: none;
+}
 html {
     font-size: 45%;
 
@@ -16,10 +24,10 @@ html {
         font-size: 36%;
     }
     @include respond(phone){
-        font-size: 30%;
+        font-size: 37%;
     }
     @include respond(small-phone){
-        font-size: 28%;
+        font-size: 38%;
     }
     @include respond(big-desktop){
         font-size: 50%;
@@ -29,7 +37,6 @@ html {
 body {
     box-sizing: border-box;    
     background: #302f2f;
-    padding: 3rem;
     @include respond(tab-land){
         padding: 0;
     }

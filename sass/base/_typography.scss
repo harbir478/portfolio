@@ -45,13 +45,8 @@ body {
 .heading-tertiary {
 
     font-size:5.5rem;
-    color: $color-primary;
+    color: #ffffff;
     display: inline-block;
-
-    @include respond(phone){
-         padding-left: 5rem;
-      }   
-
 }
 
 .skilltext {
@@ -64,11 +59,8 @@ body {
 
 .paragraph {
     font-size: 2.6rem;
-    font-style: italic;
     margin: 4rem;
     color: #e6e6e6;
-    text-align: justify;
-    text-justify: auto; 
     text-shadow: 0.5px 1px 1px rgba(0,0,0,0.2);
     
     @include respond(phone){
