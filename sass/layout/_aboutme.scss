@@ -1,0 +1,107 @@
+main{
+    margin-top: -11vh;
+    height: auto;
+    padding: 8% 8%;
+    background-image: url(../img/Dark-Grey-Wallpaper.jpg);
+    background-size: cover;
+    background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
+    overflow: hidden;
+    text-align: center;
+    
+    @include respond(tab-port){
+        padding: 12% 3%;
+    }
+    @include respond(phone){
+        margin-top: 0;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+        padding: 7% 1% 18% 2%;
+    }
+     
+    @include respond(small-phone){
+        margin-top: -3vh;
+        padding: 12% 1%;
+    }
+}
+
+.rowflex{
+
+    display:flex;
+    flex-direction: row;
+    padding: 0rem 10rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @include respond(tab-port){
+        padding: 0rem;
+    }
+    @include respond(phone){
+        justify-content: space-around;
+        margin: 0rem 2rem;
+    }
+    
+}
+
+.mySkills {
+    z-index: 3;
+    width: 100%;
+    position: relative;
+    border-radius: 0.8em;
+    padding-bottom: 5rem;
+
+    &__card {
+        
+        background-color: transparent;
+        height: auto;
+        width: 21rem;
+        text-align: center;
+        color: $text-color;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7rem;
+
+        @include respond(tab-land){
+            width: 17%;
+        }    
+
+        @include respond(tab-port){
+            width: 17%;
+        }  
+
+         @include respond(phone){
+            width: 22%;
+            margin-top:2rem;
+         } 
+         
+    }
+
+    &__skillsImg{
+        
+        width: 12rem;
+        transition: 0.35s;
+
+        @include respond(phone){
+            width: 9rem;
+         }  
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.seperator {
+    height: 12rem;
+    z-index: -2;
+    margin-top: -11.5rem;
+    width: 100%;
+    background: linear-gradient(270deg, rgba($color-primary, 0.5), rgba(126, 95, 41, 0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+    overflow: hidden;
+
+    @include respond(phone){
+        display: none;
+    }
+}
