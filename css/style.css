@@ -517,7 +517,7 @@ main {
       border-bottom: 1px solid white; }
 
 .footer {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0.9), rgba(192, 173, 111, 0.1), rgba(192, 173, 111, 0.1), rgba(0, 0, 0, 0.9)), url(../../img/LAfooter.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../img/LAfooter.jpg);
   width: 100%;
   background-size: cover;
   text-align: center;
@@ -526,7 +526,7 @@ main {
   padding-bottom: 2rem; }
   @media (max-width: 37.5em) {
     .footer {
-      background: url(../../img/LAfooterMobile.jpg); } }
+      background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../img/LAfooterMobile.jpg); } }
 
 .contactMe {
   position: relative;
