@@ -167,3 +167,24 @@
 a.link {
 	color: inherit;	
 }
+
+
+.socialIcon {
+  text-decoration: none;
+  margin-left: -3rem;
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+
+  &:hover{
+    transform:scale(1.2);
+    transition: all 0.3s; 
+  }
+}
+
+.linkedin {
+  margin-left: 2rem;
+}
+
+.sicon {
+   display:none;
+}

@@ -376,6 +376,87 @@ body {
 a.link {
   color: inherit; }
 
+.socialIcon {
+  text-decoration: none;
+  margin-left: -3rem;
+  color: white;
+  font-size: 2.5rem; }
+  .socialIcon:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+
+.linkedin {
+  margin-left: 2rem; }
+
+.sicon {
+  display: none; }
+
+.navbar {
+  position: fixed;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.1rem;
+  color: white;
+  width: 100%;
+  height: 7rem;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .navbar__logo {
+    cursor: pointer; }
+    @media (max-width: 37.5em) {
+      .navbar__logo {
+        display: none; } }
+  @media (max-width: 37.5em) {
+    .navbar {
+      padding: 0 2rem; } }
+  .navbar__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60rem; }
+    @media (max-width: 37.5em) {
+      .navbar__items {
+        width: 100%; } }
+    .navbar__items__item {
+      text-decoration: none;
+      color: white;
+      -webkit-transition: all 0.15s ease;
+      -o-transition: all 0.15s ease;
+      transition: all 0.15s ease; }
+      .navbar__items__item:hover {
+        letter-spacing: 0.2rem;
+        font-weight: 600;
+        border-bottom: 0.5rem solid #c0ad6f;
+        font-size: 2.3rem; }
+        @media (max-width: 37.5em) {
+          .navbar__items__item:hover {
+            border: none; } }
+    .navbar__items__social {
+      cursor: crosshair; }
+
 .header {
   height: 78rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.38)), to(rgba(0, 0, 0, 0.38))), url(../img/HeaderImage--large.jpg);
@@ -679,10 +760,10 @@ main {
       border-bottom: 1px solid white; }
 
 .footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../../img/LAfooter.jpg);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../img/LAfooter.jpg);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../img/LAfooter.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../img/LAfooter.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../img/LAfooter.jpg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/LAfooter.jpg);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/LAfooter.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/LAfooter.jpg);
   width: 100%;
   background-size: cover;
   text-align: center;
