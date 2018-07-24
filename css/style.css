@@ -417,6 +417,11 @@ a.link {
   width: 100%;
   height: 7rem;
   background-color: rgba(0, 0, 0, 0.4); }
+  @media (max-width: 37.5em) {
+    .navbar {
+      padding: 0 1rem;
+      font-size: 2rem;
+      height: 5.5rem; } }
   .navbar__logo {
     cursor: pointer; }
   .navbar__items {
@@ -433,10 +438,7 @@ a.link {
     width: 60rem; }
     @media (max-width: 37.5em) {
       .navbar__items {
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
-        width: 100%; } }
+        width: 58%; } }
     @media (max-width: 37.5em) {
       .navbar__items__social {
         display: none; } }
@@ -449,11 +451,12 @@ a.link {
       .navbar__items__item:hover {
         letter-spacing: 0.2rem;
         font-weight: 600;
-        border-bottom: 0.5rem solid #c0ad6f;
         font-size: 2.3rem; }
         @media (max-width: 37.5em) {
           .navbar__items__item:hover {
-            border: none; } }
+            letter-spacing: 0.1rem;
+            font-weight: 600;
+            font-size: 2.1rem; } }
     .navbar__items__social {
       cursor: crosshair; }
 
@@ -782,10 +785,11 @@ main {
   margin-top: -5rem;
   color: #c0ad6f;
   padding: 0.6rem 1.6rem;
+  letter-spacing: 0.3rem;
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 40%;
   font-size: 5rem;
   display: inline-block;
-  border-radius: 0.7rem;
   text-align: center; }
 
 .contact {
