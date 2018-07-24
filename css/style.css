@@ -419,12 +419,6 @@ a.link {
   background-color: rgba(0, 0, 0, 0.4); }
   .navbar__logo {
     cursor: pointer; }
-    @media (max-width: 37.5em) {
-      .navbar__logo {
-        display: none; } }
-  @media (max-width: 37.5em) {
-    .navbar {
-      padding: 0 2rem; } }
   .navbar__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -439,7 +433,13 @@ a.link {
     width: 60rem; }
     @media (max-width: 37.5em) {
       .navbar__items {
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         width: 100%; } }
+    @media (max-width: 37.5em) {
+      .navbar__items__social {
+        display: none; } }
     .navbar__items__item {
       text-decoration: none;
       color: white;
