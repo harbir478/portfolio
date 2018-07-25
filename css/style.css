@@ -300,13 +300,15 @@ body {
 
 .fafooter {
   color: #c0ad6f;
-  font-size: 2.5rem;
-  margin-right: 0.5rem;
+  padding: 1rem 1.5rem 1rem 0rem;
+  border-right: 0.8px solid #8a8989;
+  font-size: 4rem;
+  margin-right: 1rem;
   text-shadow: 0.5px 1px 1px black; }
 
 [class^="icon-btn"] {
-  height: 8rem;
-  width: 8rem;
+  height: 7rem;
+  width: 7rem;
   color: #fff;
   cursor: pointer;
   font-size: 3.5rem;
@@ -436,7 +438,7 @@ a.link {
         -ms-flex-align: center;
             align-items: center;
     width: 60rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .navbar__items {
         width: 58%; } }
     @media (max-width: 37.5em) {
@@ -786,7 +788,6 @@ main {
   color: #c0ad6f;
   padding: 0.6rem 1.6rem;
   letter-spacing: 0.3rem;
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 40%;
   font-size: 5rem;
   display: inline-block;
@@ -820,10 +821,13 @@ main {
           -ms-flex-align: center;
               align-items: center; } }
   .contact__info {
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 4rem;
+    padding: 0 4rem 4rem 4rem;
+    margin-top: 2rem;
     color: white;
-    font-size: 3rem; }
+    font-size: 2.7rem; }
+    @media (max-width: 56.25em) {
+      .contact__info {
+        padding: 0; } }
     @media (max-width: 37.5em) {
       .contact__info {
         margin-bottom: 1rem; } }
