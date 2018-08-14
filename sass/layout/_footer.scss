@@ -1,60 +1,60 @@
 .footer {
-        
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.4)),
-               url(../../img/LAfooter.jpg);
-    width:100%;
-    background-size:cover;
-    text-align:center;
-    height:auto;
-    position: absolute;
-    padding-bottom: 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../../img/LAfooter.jpg);
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+  height: auto;
+  padding-bottom: 2rem;
 
-    @include respond(phone){
-      background: linear-gradient(rgba(0,0,0,0.25), rgba(0, 0, 0, 0.25)),
+  @include respond(phone) {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
       url(../../img/LAfooterMobile.jpg);
-    }
+  }
 }
 
 .contactMe {
-  position: relative;
   margin-top: -5rem;
-  color:$color-primary;
+  color: $color-primary;
   padding: 0.6rem 1.6rem;
   letter-spacing: 0.3rem;
-  border-radius: 40%;
   font-size: 5rem;
-  display:inline-block;
-  text-align:center;
+  display: inline-block;
 }
 
 .contact {
   margin-top: 5rem;
   margin-bottom: 5rem;
   display: flex;
-  flex-direction:row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   font-size: 3rem;
   color: white;
- 
-      @include respond(phone){
-        margin-top: 3rem;
-        flex-direction: column;
-        align-items: center;
-      }
-    
-   &__info {
-     padding: 0 4rem 4rem 4rem;
-     margin-top: 2rem;
-     color: white;
-     font-size: 2.7rem;
 
-     @include respond(tab-port){
+  @include respond(phone) {
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__info {
+    padding: 0 4rem 4rem 4rem;
+    margin-top: 2rem;
+    color: white;
+    font-size: 2.7rem;
+
+    @include respond(tab-port) {
       padding: 0;
     }
-     @include respond(phone){
+    @include respond(phone) {
       margin-bottom: 1rem;
     }
-   }
+  }
+}
 
+@supports (-ms-ime-align: auto) {
+  .contact {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
 }

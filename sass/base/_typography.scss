@@ -1,70 +1,65 @@
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color: $black;    
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $black;
 }
 
-
 .headings--myName {
-    display: block;
-    font-size: 6rem;
-    font-weight: 600;
-    margin-top:1rem;
-    letter-spacing: 0.7rem;
-    animation-name: forName;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-    @include respond(phone){
-        margin-top:1rem;
-        letter-spacing: 0.3rem;
-    }
+  display: block;
+  font-size: 6rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  letter-spacing: 0.7rem;
+  animation: focus-in-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @include respond(phone) {
+    margin-top: 1rem;
+    letter-spacing: 0.3rem;
+  }
 }
 
 .headings--myDesc {
-    display: inline-block;
-    font-size: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 0.2rem;
-    animation-name: forDesc;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-    font-style: italic;
-    border-top: 0.05px solid #a8a8a8;
-    border-bottom: 0.05px solid #a8a8a8;
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  animation-name: forDesc;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  font-style: italic;
+  border-top: 0.05px solid #a8a8a8;
+  border-bottom: 0.05px solid #a8a8a8;
+  animation: focus-in-expand-fwd 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
-    @include respond(phone){
-        text-shadow: none;
-        border:none;
-        font-style: none;
-      }      
-    
-    
+  @include respond(phone) {
+    text-shadow: none;
+    border: none;
+    font-style: none;
+  }
 }
 
 .heading-tertiary {
-
-    font-size:5.5rem;
-    color: #ffffff;
-    display: inline-block;
+  font-size: 5.5rem;
+  color: #ffffff;
+  display: inline-block;
 }
 
 .skilltext {
-    font-size: 5rem;
-    position: absolute;
-    top: 20rem;
-    left: 12rem;
-
+  font-size: 5rem;
+  position: absolute;
+  top: 20rem;
+  left: 12rem;
 }
 
 .paragraph {
-    font-size: 2.6rem;
-    margin: 4rem;
-    color: #e6e6e6;
-    text-shadow: 0.5px 1px 1px rgba(0,0,0,0.2);
-    
-    @include respond(phone){
-      text-shadow: none;
-      font-style: none;
-    }        
+  font-size: 2.6rem;
+  margin: 4rem;
+  color: #e6e6e6;
+  text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.2);
+
+  @include respond(phone) {
+    text-shadow: none;
+    font-style: none;
+  }
 }

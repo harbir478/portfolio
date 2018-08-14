@@ -1,54 +1,60 @@
 .btn {
-    display: inline-block;
-    background: transparent;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 1.6rem;
-    letter-spacing: 0.3em;
-    color: #e9e7e7;
-    padding: 1.8rem 6rem 2rem;
-    transition: all .25s ease-in-out;
-    background: linear-gradient(270deg, rgba($color-primary, 0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
-    background-position: 1% 50%;
-    background-size: 300% 300%;
-    border-radius: 5rem;
-    
-    &--btnDiv {
-        animation: forButton 1s ease-out;
-        border: 0.3rem solid $white;
-        margin-top: 30rem;
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.6rem;
+  letter-spacing: 0.3em;
+  color: #e9e7e7;
+  padding: 1.8rem 6rem 2rem;
+  transition: all 0.25s ease-in-out;
+  background: linear-gradient(
+    270deg,
+    rgba($color-primary, 0.8),
+    rgba(146, 111, 52, 0.8),
+    rgba(34, 34, 34, 0),
+    rgba(34, 34, 34, 0)
+  );
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  border-radius: 5rem;
 
-        @include respond(phone){
-          margin-top: 15rem;
-      }
+  &--btnDiv {
+    animation: forButton 1s ease-out;
+    border: 0.3rem solid $white;
+    margin-top: 30rem;
 
-      @include respond(tab-port){
-        margin-top: 20rem;
+    @include respond(phone) {
+      margin-top: 15rem;
     }
-      }
-      
-      &:hover {
-        color: $white;
-        border: 0.3rem solid rgba($white,0);
-        background-position: 99% 50%;
-        transform: translateY(-4px);
-        box-shadow: 0 2px 8px; 
-      }
-    
-      &:active {
-          transform: translateY(-2px);
-          box-shadow: 0 1px 8px; 
-      }
 
-      &:link,
-      &:visited {
-  text-decoration: none;
-}
+    @include respond(tab-port) {
+      margin-top: 20rem;
+    }
   }
 
-  .fas {
-    font-size: 3rem;
+  &:hover {
+    color: $white;
+    border: 0.3rem solid rgba($white, 0);
+    background-position: 99% 50%;
+    transform: translateY(-4px);
+    box-shadow: 0 2px 8px;
+  }
+
+  &:active {
+    transform: translateY(-2px);
+    box-shadow: 0 1px 8px;
+  }
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+.fas {
+  font-size: 3rem;
 }
 
 .picon {
@@ -57,12 +63,12 @@
 }
 
 .resumeBtn {
-   display: inline-block;
-   border: 2px solid white;
-  
-    @include respond(phone){
-      margin: 3rem 0rem;
-   }   
+  display: inline-block;
+  border: 2px solid white;
+
+  @include respond(phone) {
+    margin: 3rem 0rem;
+  }
 }
 
 .projectBtn {
@@ -71,42 +77,42 @@
   border: 2px solid white;
   // border-bottom: 3px solid $color-primary;
 
-  @include respond(phone){
-    display:none;
- }   
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .fafooter {
- color: $color-primary;
- padding: 1rem 1.5rem 1rem 0rem;
- border-right: 0.8px solid rgb(138, 137, 137);
- font-size: 4rem;
- margin-right: 1rem;
- text-shadow: 0.5px 1px 1px rgb(0, 0, 0);
+  color: $color-primary;
+  padding: 1rem 1.5rem 1rem 0rem;
+  border-right: 0.8px solid rgb(138, 137, 137);
+  font-size: 4rem;
+  margin-right: 1rem;
+  text-shadow: 0.5px 1px 1px rgb(0, 0, 0);
 }
 
-[class^="icon-btn"]  {
-	height: 7rem;
-	width: 7rem;
-	color: #fff;
-	cursor: pointer;
-	font-size: 3.5rem;
-	line-height: 6rem;
-	transition: ease-in-out .3s;
-	border-radius: 5rem;
+[class^="icon-btn"] {
+  height: 7rem;
+  width: 7rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 3.5rem;
+  line-height: 6rem;
+  transition: ease-in-out 0.3s;
+  border-radius: 5rem;
   background-color: rgba(0, 0, 0, 0.8);
   border: 2px solid $color-primary;
 
-  @include respond(phone){
+  @include respond(phone) {
     height: 6rem;
     width: 6rem;
     font-size: 2.3rem;
-   }
-   
-   &:link,
-  &:visited{
- text-decoration: none;
-}
+  }
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
 }
 
 .twitter {
@@ -122,9 +128,9 @@
   color: rgb(255, 255, 255);
   margin-right: 3rem;
 
-   @include respond(phone){
-     display:none;
-   }
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .instagram {
@@ -137,39 +143,38 @@
 }
 
 .icon-btn:hover {
-	transform: scale(1.10);	
-	color: #FFFFFF;
+  transform: scale(1.1);
+  color: #ffffff;
 }
 
 .twitter:hover {
-  background-color: #4099FF;	
+  background-color: #4099ff;
   border: none;
 }
 
 .facebook:hover {
-  background-color: #3B5998;	
+  background-color: #3b5998;
   border: none;
 }
 
 .google-plus:hover {
-  background-color: #DB5A3C;
-  border: none;	
+  background-color: #db5a3c;
+  border: none;
 }
 
 .instagram:hover {
-  background-color: #5C3D2E;	
+  background-color: #5c3d2e;
   border: none;
 }
 
 .github:hover {
-  background-color: #4183C4;
-  border: none;	
+  background-color: #4183c4;
+  border: none;
 }
 
 a.link {
-	color: inherit;	
+  color: inherit;
 }
-
 
 .socialIcon {
   text-decoration: none;
@@ -177,9 +182,9 @@ a.link {
   color: rgb(255, 255, 255);
   font-size: 2.5rem;
 
-  &:hover{
-    transform:scale(1.2);
-    transition: all 0.3s; 
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
   }
 }
 
@@ -188,5 +193,5 @@ a.link {
 }
 
 .sicon {
-   display:none;
+  display: none;
 }
