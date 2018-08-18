@@ -63,7 +63,6 @@
 
 .card2 {
   perspective: 150rem;
-  -moz-perspective: 150rem;
   position: relative;
   height: 38rem;
 
@@ -81,7 +80,6 @@
 
     &--front {
       background-color: rgba(39, 37, 13, 1);
-      justify-content: center;
       text-align: center;
       padding: 5px;
 
@@ -160,5 +158,79 @@
 @supports (-ms-ime-align: auto) {
   .projects {
     padding-top: 5rem;
+  }
+}
+
+@media all and (-ms-high-contrast: none) {
+  *::-ms-backdrop,
+  .card2 {
+    perspective: none;
+  }
+
+  .projects {
+    padding-top: 2%;
+  }
+  #one {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(24, 24, 24, 0.7) 0%,
+        rgba(24, 24, 24, 0.7) 100%
+      ),
+      url(../../img/Campground.JPG);
+    background-size: cover;
+  }
+
+  #two {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(24, 24, 24, 0.7) 0%,
+        rgba(24, 24, 24, 0.7) 100%
+      ),
+      url(../../img/youtubeClone.JPG);
+    background-size: cover;
+  }
+
+  #three {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(24, 24, 24, 0.7) 0%,
+        rgba(24, 24, 24, 0.7) 100%
+      ),
+      url(../../img/Weather.JPG);
+    background-size: cover;
+  }
+
+  #four {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(24, 24, 24, 0.7) 0%,
+        rgba(24, 24, 24, 0.7) 100%
+      ),
+      url(../../img/Survey.JPG);
+    background-size: cover;
+  }
+
+  .card2__side {
+    position: static;
+    transition: none;
+    overflow: visible;
+    transform: unset;
+    &:hover {
+      transform: unset;
+    }
+
+    &--front {
+      display: none;
+    }
+
+    &--back {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      opacity: 1;
+      transform: none;
+      align-items: stretch;
+    }
   }
 }

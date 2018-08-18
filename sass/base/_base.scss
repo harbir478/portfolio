@@ -1,55 +1,65 @@
 *,
 *::after,
 *::before {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
 }
 
-*::-moz-selection { color: $color-primary}
-*::selection { color: $color-primary}
+*::-moz-selection {
+  color: $color-primary;
+}
+*::selection {
+  color: $color-primary;
+}
 
 *:focus {
-    text-decoration: none;
-    outline: none;
+  text-decoration: none;
+  outline: none;
 }
 button:focus {
-    text-decoration: none;
-    outline: none;
+  text-decoration: none;
+  outline: none;
 }
 button:active {
-    text-decoration: none;
-    outline: none;
+  text-decoration: none;
+  outline: none;
 }
 *:active {
-    text-decoration: none;
-    outline: none;
+  text-decoration: none;
+  outline: none;
 }
 html {
-    font-size: 45%;
+  font-size: 45%;
 
-
-    @include respond(tab-land){
-        font-size: 40%;
-    }
-    @include respond(tab-port){
-        font-size: 36%;
-    }
-    @include respond(phone){
-        font-size: 37%;
-    }
-    @include respond(small-phone){
-        font-size: 38%;
-    }
-    @include respond(big-desktop){
-        font-size: 50%;
-    }
+  @include respond(tab-land) {
+    font-size: 40%;
+  }
+  @include respond(tab-port) {
+    font-size: 36%;
+  }
+  @include respond(phone) {
+    font-size: 37%;
+  }
+  @include respond(small-phone) {
+    font-size: 38%;
+  }
+  @include respond(big-desktop) {
+    font-size: 50%;
+  }
 }
 
 body {
-    box-sizing: border-box;    
-    background: #302f2f;
-    @include respond(tab-land){
-        padding: 0;
-    }
+  box-sizing: border-box;
+  background: #302f2f;
+  @include respond(tab-land) {
+    padding: 0;
+  }
+}
+
+@media all and (-ms-high-contrast: none) {
+  *::-ms-backdrop,
+  body {
+    background-color: rgb(24, 24, 24);
+  }
 }
