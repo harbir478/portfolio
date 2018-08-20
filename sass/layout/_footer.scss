@@ -6,10 +6,20 @@
   text-align: center;
   height: auto;
   padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 
   @include respond(phone) {
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
       url(../../img/LAfooterMobile.jpg);
+  }
+
+  &__social {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -27,7 +37,7 @@
   margin-bottom: 5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-size: 3rem;
   color: white;
 
@@ -43,30 +53,9 @@
     color: white;
     font-size: 2.7rem;
 
-    @include respond(tab-port) {
-      padding: 0;
-    }
     @include respond(phone) {
+      padding: 0;
       margin-bottom: 1rem;
     }
-  }
-}
-
-@supports (-ms-ime-align: auto) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
-
-@media all and (-ms-high-contrast: none) {
-  *::-ms-backdrop,
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
   }
 }
